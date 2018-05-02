@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "GTmetrix Plugin",
+  "description": "This extension is a demo",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/ninja.png",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": ["activeTab"]
+}
