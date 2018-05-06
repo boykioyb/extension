@@ -1,6 +1,5 @@
-
 $(function() {
-  chrome.tabs.getSelected(null,function(n) {
+  chrome.tabs.getSelected(null, function(n) {
     var i = chrome.extension.getBackgroundPage().headerInfo[n.id],
       t,
       r,
@@ -9,13 +8,11 @@ $(function() {
       f,
       e,
       o;
-    if (i == undefined)
-    {
+    if (i == undefined) {
       $("#result").html(
         "<b><br />Could not retrieve any headers, try reload the tab to view the headers.<br />chrome:// pages and Chrome Store don't provide any response headers.<br /><br /></b>"
       );
-    }
-    else {
+    } else {
       for (console.log(i), t = "", r = 0, s = i.response.length; r < s; ++r) {
         for (
           i.request[r].requestHeaders.sort(sortHeaders),
