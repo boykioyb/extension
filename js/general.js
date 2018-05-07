@@ -6,7 +6,6 @@ function sortHeaders(n, t) {
   
   function getStyle(n) {
     var t = "";
-    console.log(n);
     return (
       n.match(/(200|201|202|203|204|205|206|207)/g) !== null && (t = "success"),
       n.match(/(300|301|302|303|304|305|306|307)/g) !== null && (t = "info"),
